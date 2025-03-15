@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "beatplug"
+version = "1.0.0"
+description = "Analyse system audio and send beats to a microcontroller over websocket"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10.2,<3.13"
+numpy = "^1.26.1"
+PyAudio = "^0.2.13"
+scipy = "^1.11.3"
+sounddevice = "^0.4.6"
+pygame = "^2.5.2"
+matplotlib = "^3.8.0"
+textual = "^2.1.2"
+websocket-client = "^1.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+textual-dev = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
